@@ -1,0 +1,12 @@
+<div data-sly-use.model="com.adobe.aem.media.core.models.header.Header">
+    <header class="header-class">
+        <img src="${model.whiteLogo}" alt="logo">
+        <nav>
+            <ul data-sly-list.headerMenu="${model.headerLinks}" class="navlinks">
+                <li class="header-list"><a href="${headerMenu.navLink}">${headerMenu.navText}</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+         data-sly-call="${clientlib.all @ categories='header.media'}"/>

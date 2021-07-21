@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}false">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <whiteLogo
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="White Logo Image"
+                                        fieldLabel="White Logo"
+                                        name="./whiteLogo"
+                                        rootPath="/content/dam/velobank"
+                                        text="White Logo"/>
+                                    <logoLink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="Logo Link"
+                                        fieldLabel="Logo link"
+                                        name="./logoLink"
+                                        rootPath="/content/velobank"
+                                        text="Logo Link"/>
+                                    <logoLinkTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Logo Link Title"
+                                        fieldLabel="Logo Link Title"
+                                        name="./logoLinkTitle"
+                                        text="Logo Link Title"/>
+                                    <logoLinkNewTab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Open the URL in the new Tab"
+                                        fieldLabel="Open in New Tab"
+                                        name="./logoLinkNewTab"
+                                        text="Open in New Tab"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                    <headerLinks
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Header Links"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}false">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <headerLinks
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Header Links">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./headerLinks">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <navText
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Navbar Link Text"
+                                                            fieldLabel="Navbar Link Text"
+                                                            name="./navText"
+                                                            text="Navbar Link Text"/>
+                                                        <navLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            fieldDescription="Navbar Link"
+                                                            fieldLabel="Navbar Link"
+                                                            name="./navLink"
+                                                            rootPath="/content/velobank"
+                                                            text="Navbar Link"/>
+                                                        <navNewTab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldDescription="Open the URL in the new Tab"
+                                                            fieldLabel="Open in New Tab"
+                                                            name="./navNewTab"
+                                                            text="Open in New Tab"
+                                                            uncheckedValue="false"
+                                                            value="true"/>
+                                                        <navLinkTitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Navbar Link Title"
+                                                            fieldLabel="Navbar Link Title"
+                                                            name="./navLinkTitle"
+                                                            text="Navbar Link Title"/>
+                                                        <navLinkDescription
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Navbar Link Description"
+                                                            fieldLabel="Navbar Link Description"
+                                                            name="./navLinkDescription"
+                                                            text="Navbar Link Description"/>
+                                                        <multifieldcollection
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            composite="{Boolean}true"
+                                                            fieldDescription="Click on Add button to add Sub Menus"
+                                                            fieldLabel="Sub Menus"
+                                                            name="./subMenus">
+                                                            <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                name="./subMenus">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <navSubMenuImage
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                        fieldDescription="Navbar Submenu Image"
+                                                                        fieldLabel="Navbar Submenu Image"
+                                                                        name="./navSubMenuImage"
+                                                                        rootPath="/content/dam/velobank"
+                                                                        text="Navbar Submenu Image"/>
+                                                                    <navSubMenuImageAlt
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Navbar Submenu Image Alt"
+                                                                        fieldLabel="Navbar Submenu Image Alt"
+                                                                        name="./navSubMenuImageAlt"
+                                                                        text="Navbar Submenu Image Alt"/>
+                                                                    <navSubMenuTitle
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Navbar Submenu Title"
+                                                                        fieldLabel="Navbar Submenu Title"
+                                                                        name="./navSubMenuTitle"
+                                                                        text="Navbar Submenu Title"/>
+                                                                    <navSubMenuDescription
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Navbar Submenu Description"
+                                                                        fieldLabel="Navbar Submenu Description"
+                                                                        name="./navSubMenuDescription"
+                                                                        text="Navbar Submenu Description"/>
+                                                                    <navSubMenuLink
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                        fieldDescription="Navbar Submenu Link"
+                                                                        fieldLabel="Navbar Submenu Link"
+                                                                        name="./navSubMenuLink"
+                                                                        rootPath="/content/velobank"
+                                                                        text="Navbar Submenu Link"/>
+                                                                    <navSubMenuNewTab
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        fieldDescription="Open the URL in the new Tab"
+                                                                        fieldLabel="Open in New Tab"
+                                                                        name="./navSubMenuNewTab"
+                                                                        text="Open in New Tab"
+                                                                        uncheckedValue="false"
+                                                                        value="true"/>
+                                                                    <navSubMenuLinkTitle
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Navbar Submenu Link Title"
+                                                                        fieldLabel="Navbar Submenu Link Title"
+                                                                        name="./navSubMenuLinkTitle"
+                                                                        text="Navbar Submenu Link Title"/>
+                                                                </items>
+                                                            </field>
+                                                        </multifieldcollection>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </headerLinks>
+                                </items>
+                            </column>
+                        </items>
+                    </headerLinks>
+                    <ctaLinks
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="CTA Links"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}false">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <logInText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="LOG IN Text"
+                                        fieldLabel="LOG IN Text"
+                                        name="./logInText"
+                                        text="LOG IN Text"/>
+                                    <logInlink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="LOG IN Link"
+                                        fieldLabel="LOG IN Link"
+                                        name="./logInlink"
+                                        rootPath="/content/velobank"
+                                        text="LOG IN Link"/>
+                                    <logInNewTab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Open the URL in the new Tab"
+                                        fieldLabel="Open in New Tab"
+                                        name="./logInNewTab"
+                                        text="Open in New Tab"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <logInlinkTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="LOG IN Link Title"
+                                        fieldLabel="LOG IN Link Title"
+                                        name="./logInlinkTitle"
+                                        text="LOG IN Link Title"/>
+                                    <signUpText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="SIGN UP Text"
+                                        fieldLabel="SIGN UP Text"
+                                        name="./signUpText"
+                                        text="SIGN UP Text"/>
+                                    <signUplink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="SIGN UP Link"
+                                        fieldLabel="SIGN UP Link"
+                                        name="./signUplink"
+                                        rootPath="/content/velobank"
+                                        text="SIGN UP Link"/>
+                                    <signUpNewTab
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Open the URL in the new Tab"
+                                        fieldLabel="Open in New Tab"
+                                        name="./signUpNewTab"
+                                        text="Open in New Tab"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <signUplinkTitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="SIGN UP Link Title"
+                                        fieldLabel="SIGN UP Link Title"
+                                        name="./signUplinkTitle"
+                                        text="SIGN UP Link Title"/>
+                                </items>
+                            </column>
+                        </items>
+                    </ctaLinks>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
