@@ -1,0 +1,25 @@
+<sly data-sly-use.model="com.adobe.aem.media.core.models.carousel.CarouselModel">
+</sly>
+
+
+<div class="slideshow-container">
+    <sly data-sly-list.modelItem="${model.carouselLinkItems}">
+        <div class="mySlides fade">
+            <img src="${modelItem.image}" style="width:100%">
+            <div class="carousel-heading text">
+             <div class="carousel-text">${modelItem.caroselHeading @context='html'}</div>
+            <div class="carousel-description">${modelItem.carouselDescription}</div>
+                <a data-sly-test="${modelItem.ctaTextLabel}" class="carousel-cta" href="${modelItem.ctaLink}">${modelItem.ctaTextLabel}</a>
+            </div>
+        </div>
+    </sly>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='carousel.media'}"/>

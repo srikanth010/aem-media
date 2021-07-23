@@ -19,7 +19,7 @@ import java.util.List;
 @Exporter(name="jackson", selector = "srikanth", extensions = "json")
 public class Header {
 
-    static final String RESOURCE_TYPE = "wknd/components/header";
+    static final String RESOURCE_TYPE = "media/components/header";
 
     @ScriptVariable
     Page currentPage;
