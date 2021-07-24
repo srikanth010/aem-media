@@ -5,9 +5,14 @@ import com.adobe.xfa.Int;
 
 public class People {
 
+    private int birth_year;
     private String first_name;
     private String last_name;
-    private int birth_year;
+
+
+    public int getBirth_year(){
+        return birth_year;
+    }
 
     public String getFirst_name() {
         return first_name;
@@ -17,8 +22,8 @@ public class People {
         return last_name;
     }
 
-    public int getBirth_year(){
-        return birth_year;
+    public void setBirth_Year(int birth_year) {
+        this.birth_year = birth_year;
     }
 
     public void setFirst_name(String first_name) {
@@ -28,8 +33,5 @@ public class People {
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
-
-    public void setBirth_Year(int birth_year) {
-        this.birth_year = birth_year;
-    }
+    
 }

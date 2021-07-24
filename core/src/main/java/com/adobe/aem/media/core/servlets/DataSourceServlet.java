@@ -23,7 +23,6 @@ import java.io.PrintWriter;
                 "sling.servlet.methods=post",
                 "sling.servlet.paths=/bin/dataConnection"
         })
-@WebServlet
 public class DataSourceServlet extends SlingAllMethodsServlet {
 
     private static final long serialVersionUID = 1L;
