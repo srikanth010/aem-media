@@ -14,10 +14,10 @@ public class PeopleService {
 
         int result = 0;
 
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         try (Connection connection = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/sys", "root", "Kantheti@9");
+                .getConnection("jdbc:mysql://localhost:3306/aemdb", "root", "Kantheti@9");
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement("insert into people VALUES (?,?,?,?)")) {

@@ -56,16 +56,15 @@ public class DataSourceServlet extends SlingAllMethodsServlet {
         String last_name = request.getParameter("last_name");
 
         People people = new People();
-        people.setBirth_Year(birth_year);
+        people.setBirth_year(birth_year);
         people.setFirst_name(first_name);
         people.setLast_name(last_name);
 
         try {
             peopleService.registerPeople(people);
             PrintWriter out = response.getWriter();
-            out.println("Successfully Inserted"
-                    + people.getFirst_name() + people.getLast_name() + people.getBirth_year());
-
+            out.println("Successfully Inserted "
+                    + people.getFirst_name()+ " "+ people.getLast_name() + " "+ people.getBirth_year());
         } catch (Exception e) {
             logger.info("Error occured while establishing the connection ::{}", e);
 

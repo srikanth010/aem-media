@@ -22,7 +22,7 @@ public class People {
         return last_name;
     }
 
-    public void setBirth_Year(int birth_year) {
+    public void setBirth_year(int birth_year) {
         this.birth_year = birth_year;
     }
 
@@ -33,5 +33,5 @@ public class People {
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
-    
+
 }
