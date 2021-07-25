@@ -1,23 +1,31 @@
-<html>
-<head>
-<title>Insert Data</title>
-</head>
-<body>
-    <!-- Give Servlet reference to the form as an instances 
-    GET and POST services can be according to the problem statement-->
-    <form action="/bin/dataConnection" method="post">
-        <p>Birth Year</p>
-        <!-- Create an element with mandatory name attribute,
-        so that data can be transfer to the servlet using getParameter() -->
-        <input type="text" name="birth_year"/>
-        <br/>
-        <p>First Name:</p>
-        <input type="text" name="first_name"/>
-        <br/>
-        <p>Last Name:</p>
-        <input type="text" name="last_name"/>
-        <br/><br/><br/>
-        <input type="submit"/>
-    </form>
-</body>
-</html>
+<form action="/bin/dataConnection" method="post" class="formclass">
+    <p class="text-p">First Name:</p>
+    <input type="text" name="first_name" placeholder="First Name"/>
+    <br/>
+    <p class="text-p">Last Name:</p>
+    <input type="text" name="last_name" placeholder="Last Name"/>
+    <br/>
+    <p class="text-p">Birth Year</p>
+    <input type="text" name="birth_year" placeholder="Birth Year"/>
+    <br/>
+    <p for="psw" class="text-p">Password:</p>
+    <input type="password" id="psw" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+    <br/>
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+    <p class="text-p">Email:</p>
+    <input type="email" name="email" required placeholder="example@email.com"/>
+    <br/>
+   <p class="text-p">Phone Number:</p>
+    <input type="tel" name="phone" placeholder="1234-567-8910"/>
+    <br/><br/><br/>
+    <input type="submit"/>
+</form>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='form.media'}"/>

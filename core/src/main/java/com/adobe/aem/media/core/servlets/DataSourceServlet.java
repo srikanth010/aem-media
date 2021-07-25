@@ -54,11 +54,17 @@ public class DataSourceServlet extends SlingAllMethodsServlet {
         int birth_year = Integer.valueOf(request.getParameter("birth_year"));
         String first_name = request.getParameter("first_name");
         String last_name = request.getParameter("last_name");
+        String email = request.getParameter("email");
+        String phone= request.getParameter("phone");
+        String password = request.getParameter("password");
 
         People people = new People();
         people.setBirth_year(birth_year);
         people.setFirst_name(first_name);
         people.setLast_name(last_name);
+        people.setEmail(email);
+        people.setPhone(phone);
+        people.setPassword(password);
 
         try {
             peopleService.registerPeople(people);
