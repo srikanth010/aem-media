@@ -31,6 +31,9 @@ public class BannerModel {
     @ValueMapValue
     private String bannerCtaLink;
 
+    @ValueMapValue
+    private String linkColor;
+
     public static String getResourceType() {
         return RESOURCE_TYPE;
     }
@@ -54,4 +57,6 @@ public class BannerModel {
     public String getBannerCtaLink() {
         return bannerCtaLink;
     }
+
+    public String getLinkColor(){ return linkColor;}
 }

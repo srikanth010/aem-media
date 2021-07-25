@@ -4,12 +4,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Random;
 
 public class PeopleService {
     public int registerPeople(People people) throws ClassNotFoundException {
         String INSERT_USERS_SQL = "INSERT INTO people" +
                 "  (id, birth_year, first_name, last_name) VALUES " +
                 " (?, ?, ?, ?, ?, ?, ?);";
+
+        Random rand = new Random(); //instance of random class
+        int upperbound = 10000;
+        int int_random = rand.nextInt(upperbound);
 
 
         int result = 0;
@@ -21,7 +26,7 @@ public class PeopleService {
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement("insert into people VALUES (?,?,?,?,?,?,?)")) {
-            preparedStatement.setInt(1, 3);
+            preparedStatement.setInt(1, int_random);
             preparedStatement.setInt(2, people.getBirth_year());
             preparedStatement.setString(3, people.getFirst_name());
             preparedStatement.setString(4, people.getLast_name());

@@ -1,0 +1,65 @@
+<sly data-sly-use.model="com.adobe.aem.media.core.models.product.ProductModel"></sly>
+
+    <main data-sly-test="${model.productTitle}" class="container-product">
+      <!-- Left Column / Headphones Image -->
+
+        <div class="left-column">
+          <sly data-sly-list.product="${model.productDetail}">
+        <img data-image="${product.productColor @context='html'}" class="active" src="${product.productImage}" style="width: inherit;" alt=""></sly>
+      </div>
+
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>${model.productType}</span>
+          <h1>${model.productTitle}</h1>
+          <p>${model.productDescription @context='html'}</p>
+        </div>
+
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div data-sly-test="${model.enableColor}" class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <sly data-sly-list.product="${model.productDetail}">
+                <input data-image="${product.productColor}" type="radio" id="${product.productColor}" name="color" value="${product.productColor}" checked>
+                <label for="${product.productColor}"><span></span></label></sly>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Cable Configuration -->
+          <div data-sly-test="${model.enableSize}" class="cable-config">
+            <span>Cable configuration</span>
+
+            <div class="cable-choose">
+              <button>Small</button>
+              <button>Medium</button>
+              <button>Large</button>
+            </div>
+
+            <a href="#">${model.productHelp}</a>
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span data-sly-test="${model.productPrice}">$${model.productPrice}</span>
+          <a data-sly-test="${model.productCtaLabel} "href="${model.productCtaLink}" class="cart-btn">${model.productCtaLabel}</a>
+        </div>
+      </div>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='product.media'}"/>

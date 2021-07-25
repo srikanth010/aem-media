@@ -43,16 +43,25 @@ body, html {
 .banner-Heading {
     font-size: 50px !important;
     width: 600px !important;
-    color: #dfdfdf;
+    color: #131313;
+    margin-bottom: 0px !important;
 }
 
 .banner-description {
     opacity: 0.5 !important;
-    color: #dfdfdf;
+    color: #131313;
 }
 
 .banner-button {
     background: #169bf0 !important;
     border-radius: 20px !important;
+    color: #dfdfdf;
+}
+
+.link-color-black{
+    color: #131313;
+}
+
+.link-color-white{
     color: #dfdfdf;
 }

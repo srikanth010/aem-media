@@ -1,12 +1,17 @@
 <sly data-sly-use.model="com.adobe.aem.media.core.models.banner.BannerModel"></sly>
 <div class="hero-image" style="background-image:url('${model.bannerImage @ context='styleString'}');" >
     <div class="hero-text">
-        <h1 class="banner-Heading">${model.bannerHeading @context='html'}</h1>
-        <p class="banner-description">${model.bannerDescription}</p>
-        <a href="${model.bannerCtaLink}">
-        <button class="banner-button">${model.bannerCtaLabel}</button></a>
+        <sly data-sly-test="${ model.linkColor == 'white'}">
+        <h1 class="link-color-white banner-Heading">${model.bannerHeading @context='html'}</h1>
+        <p class="link-color-white banner-description">${model.bannerDescription}</p>
+    </sly>
+        <sly data-sly-test ="${model.linkColor=='black'}">
+            <h1 class="link-color-black banner-Heading">${model.bannerHeading @context='html'}</h1>
+            <p class="link-color-black banner-description">${model.bannerDescription}</p>
+        </sly>
+        <sly data-sly-test="${model.bannerCtaLabel}"><a href="${model.bannerCtaLink}">
+        <button class="banner-button">${model.bannerCtaLabel}</button></a></sly>
     </div>
 </div>
-
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
      data-sly-call="${clientlib.all @ categories='banner.media'}"/>

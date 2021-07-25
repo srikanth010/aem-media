@@ -3,7 +3,7 @@
     <img src="${model.whiteLogo}" alt="logo">
     <nav>
         <ul data-sly-list.headerMenu="${model.headerLinks}" class="navlinks">
-            <li class="header-list"><a href="${headerMenu.navLink}">${headerMenu.navText}</a></li>
+            <li class="header-list"><a href="${headerMenu.navLink @context='html'}">${headerMenu.navText}</a></li>
         </ul>
         <div class="login-header" data-sly-resource="${'comp' @resourceType = 'media/components/login'}"></div>
     </nav>
