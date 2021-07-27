@@ -1,0 +1,21 @@
+<sly data-sly-use.model="com.adobe.aem.media.core.models.product.ProductGrid"></sly>
+<div class="productcard-gallery">
+    <div class="productcard-content">
+        <a href="${model.productPath}">
+        <img class="productgrid-img" src="${model.productImage}">
+        <h3>${model.productTitle}</h3>
+        <p>${model.productDescription @context='html'}</p>
+        <h6>${model.productPrice}</h6>
+        <ul>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+        </ul>
+        </a>
+        <button class="buy-1">${model.productCtaLabel}</button>
+    </div>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='productgrid.media'}"/>
