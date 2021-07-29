@@ -2,13 +2,14 @@ a{
     text-decoration: none !important;
 }
 .productcard-gallery{
-    width: -webkit-max-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: auto;
+    margin-top: 24px;
+    height: 450px;
 }
 .productcard-content{
-    width: 24%;
+    width: -webkit-fill-available;
     margin: 15px;
     box-sizing: border-box;
     float: left;
@@ -19,6 +20,11 @@ a{
     padding-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: .4s;
+}
+
+.productGrid{
+    width: auto;
+    height: 500px;
 }
 productgrid-img{
     width: 200px;
@@ -51,7 +57,14 @@ button{
     border-bottom-left-radius: 10px;
 }
 .buy-1{
-    background-color: #2183a2;
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 17px;
+    margin: 8px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: auto;
 }
 .buy-2{
     background-color: #3b3e6e;

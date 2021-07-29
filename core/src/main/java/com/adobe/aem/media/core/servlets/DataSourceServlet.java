@@ -55,7 +55,7 @@ public class DataSourceServlet extends SlingAllMethodsServlet {
         String first_name = request.getParameter("first_name");
         String last_name = request.getParameter("last_name");
         String email = request.getParameter("email");
-        String phone= request.getParameter("phone");
+        String phone = request.getParameter("phone");
         String password = request.getParameter("password");
 
         People people = new People();
@@ -70,7 +70,7 @@ public class DataSourceServlet extends SlingAllMethodsServlet {
             peopleService.registerPeople(people);
             PrintWriter out = response.getWriter();
             out.println("Successfully Inserted "
-                    + people.getFirst_name()+ " "+ people.getLast_name() + " "+ people.getBirth_year());
+                    + people.getFirst_name() + " " + people.getLast_name() + " " + people.getBirth_year());
         } catch (Exception e) {
             logger.info("Error occured while establishing the connection ::{}", e);
 

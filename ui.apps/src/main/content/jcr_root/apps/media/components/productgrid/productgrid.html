@@ -1,7 +1,7 @@
 <sly data-sly-use.model="com.adobe.aem.media.core.models.product.ProductGrid"></sly>
 <div class="productcard-gallery">
     <div class="productcard-content">
-        <a href="${model.productPath}">
+        <a href="${model.productPath @ extension = 'html'}">
         <img class="productgrid-img" src="${model.productImage}">
         <h3>${model.productTitle}</h3>
         <p>${model.productDescription @context='html'}</p>

@@ -10,6 +10,8 @@ import org.osgi.service.component.annotations.Reference;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
+import javax.jcr.Node;
+import javax.jcr.NodeIterator;
 
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class}, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class ProductGrid {
@@ -54,10 +56,23 @@ public class ProductGrid {
             Resource res = resourceResolver.getResource(getProductPath() + "/jcr:content/root/container/container/product");
             properties = res.getValueMap();
             productTitle = properties.get("productTitle", String.class);
-            productDescription = properties.get("productDescription", String.class);
-            productImage = properties.get("productImage", String.class);
+            int maxLength = 167;
+            String productDescriptionString = properties.get("productDescription", String.class);
+            if (productDescriptionString.length() > maxLength) {
+                productDescription = productDescriptionString.substring(0,maxLength);
+            }else
+                productDescription = properties.get("productDescription", String.class);
             productCtaLabel = properties.get("productCtaLabel", String.class);
             productCtaLink = properties.get("productCtaLink", String.class);
+            Node node = res.adaptTo(Node.class);
+            NodeIterator nodeItr = node.getNodes();
+            while(nodeItr.hasNext())
+            {
+                Node cNode = nodeItr.nextNode();
+                NodeIterator nodeItr1 = cNode.getNodes();
+                Node cNode1 = nodeItr1.nextNode();
+                productImage = cNode1.getProperty("productImage").getValue().getString();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

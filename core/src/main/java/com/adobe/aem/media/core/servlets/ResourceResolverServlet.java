@@ -12,10 +12,13 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 import javax.jcr.Node;
+import javax.jcr.NodeIterator;
+import javax.jcr.RepositoryException;
 import javax.servlet.Servlet;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 @Component(service = {Servlet.class},
@@ -37,8 +40,18 @@ public class ResourceResolverServlet extends SlingSafeMethodsServlet {
             Resource res = resourceResolver.getResource("/content/media/us/en/products/men/coat-1/jcr:content/root/container/container/product");
             ValueMapValue properties = (ValueMapValue) res.adaptTo(Resource.class);
             String path = res.getValueMap().get("productDescription",String.class);
-            response.getWriter().write(path);
-        } catch (LoginException e) {
+            Node node = res.adaptTo(Node.class);
+            NodeIterator nodeItr = node.getNodes();
+            while(nodeItr.hasNext())
+            {
+                Node cNode = nodeItr.nextNode();
+                NodeIterator nodeItr1 = cNode.getNodes();
+                Node cNode1 = nodeItr1.nextNode();
+                String result = cNode1.getProperty("productImage").getValue().getString();
+                response.getWriter().write(result);
+            }
+            response.getWriter().write(path+" coming with servlet ");
+        } catch (LoginException | RepositoryException e) {
             e.printStackTrace();
             response.getWriter().write(e.getMessage());
         }
