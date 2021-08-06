@@ -1,0 +1,113 @@
+a.add-to-cart {
+	width: 216px !important;
+	height: 48px !important;
+	background: #ffab00 !important;
+	font-size: 18px !important;
+	line-height: 48px !important;
+	letter-spacing: 2px !important;
+	color: rgb(255, 255, 255) !important;
+	text-transform: uppercase !important;
+	-moz-border-radius: 24px !important;
+	-webkit-border-radius: 24px !important;
+	border-radius: 24px !important;
+	text-decoration: none !important;
+	text-align: center !important;
+	left: 24px !important;
+	top: 48px !important;
+	display: block !important;
+	box-shadow: 0 3px 6px rgba(255, 171, 0, 0.16), 0 3px 6px rgba(255, 171, 0, 0.23) !important;
+	-moz-box-shadow: 0 3px 6px rgba(255, 171, 0, 0.16), 0 3px 6px rgba(255, 171, 0, 0.23) !important;
+	-webkit-box-shadow: 0 3px 6px rgba(255, 171, 0, 0.16), 0 3px 6px rgba(255, 171, 0, 0.23) !important;
+}
+
+a.add-to-cart.size {
+	width: 48px !important;
+	left: 108px !important;
+	font-size: 0 !important;
+	color: #e7bb45 !important;
+	letter-spacing: 0 !important;
+	-webkit-transition: .2s linear !important;
+	-moz-transition: .2s linear !important;
+	-ms-transition: .2s linear !important;
+	-o-transition: .2s linear !important;
+	transition: .2s linear !important;
+}
+
+a.add-to-cart.hover {
+	-webkit-transition: .2s linear !important;
+	-moz-transition: .2s linear !important;
+	-ms-transition: .2s linear !important;
+	-o-transition: .2s linear !important;
+	transition: .2s linear !important;
+	-webkit-transform: rotate(180deg) !important;
+	-moz-transform: rotate(180deg) !important;
+	-ms-transform: rotate(180deg) !important;
+	-o-transform: rotate(180deg) !important;
+	transform: rotate(180deg) !important;
+	-webkit-transform-origin: 108px 24px !important;
+	-moz-transform-origin: 108px 24px !important;
+	-o-transform-origin: 108px 24px !important;
+	-ms-transform-origin: 108px 24px !important;
+	transform-origin: 108px 24px !important;
+}
+
+a.cart {
+	width: 72px !important;
+	height: 72px !important;
+	-moz-border-radius: 36px !important;
+	-webkit-border-radius: 36px !important;
+	border-radius: 36px !important;
+	font-size: 18px !important;
+	text-align: center !important;
+	color: #616161 !important;
+	text-decoration: none !important;
+	right: 24px !important;
+	top: 36px !important;
+	display: block !important;
+	background: #535558 url(http://images.vfl.ru/ii/1484930184/14435803/15757225.png) center no-repeat !important;
+	background-size: 36px !important;
+	box-shadow: 0 3px 6px rgba(97, 97, 97 0.16), 0 3px 6px rgba(97, 97, 97 0.23) !important;
+	-moz-box-shadow: 0 3px 6px rgba(97, 97, 97 0.16), 0 3px 6px rgba(97, 97, 97 0.23) !important;
+	-webkit-box-shadow: 0 3px 6px rgba(97, 97, 97 0.16), 0 3px 6px rgba(97, 97, 97 0.23) !important;
+}
+a.cart > span {
+	width: 24px !important;
+	height: 24px !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	line-height: 24px !important;
+	position: relative !important;
+	-moz-border-radius: 12px !important;
+	-webkit-border-radius: 12px !important;
+	border-radius: 12px !important;
+	display: block !important;
+	transform: scale(0) !important;
+	-o-transform: scale(0) !important;
+	-ms-transform: scale(0) !important;
+	-moz-transform: scale(0) !important;
+	-webkit-transform: scale(0) !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	margin: auto !important;
+	background: #ffab00 !important;
+	box-shadow: 0 3px 6px rgba(255, 171, 0, 0.16), 0 3px 6px rgba(255, 171, 0, 0.23) !important;
+	-moz-box-shadow: 0 3px 6px rgba(255, 171, 0, 0.16), 0 3px 6px rgba(255, 171, 0, 0.23) !important;
+	-webkit-box-shadow: 0 3px 6px rgba(255, 171, 0, 0.16), 0 3px 6px rgba(255, 171, 0, 0.23) !important;
+}
+
+a.cart > span.counter {
+	left: 48px !important;
+	bottom: 48px !important;
+	-webkit-transition: .2s linear !important;
+	-moz-transition: .2s linear !important;
+	-ms-transition: .2s linear !important;
+	-o-transition: .2s linear !important;
+	transition: .2s linear !important;
+	transform: scale(1) !important;
+	-o-transform: scale(1) !important;
+	-ms-transform: scale(1) !important;
+	-moz-transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
+}

@@ -60,6 +60,12 @@ header{
     color: #202020 !important;
 }
 
+.cart-hdr{
+    position: absolute;
+    margin-left: 690px;
+    display: inline-block;
+}
+
 img{
     inline-size: 130px;
 }

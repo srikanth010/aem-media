@@ -5,6 +5,7 @@
         <ul data-sly-list.headerMenu="${model.headerLinks}" class="navlinks">
             <li class="header-list"><a href="${headerMenu.navLink @ extension = 'html'}">${headerMenu.navText}</a></li>
         </ul>
+        <div class="cart-hdr" data-sly-resource="${'cart' @resourceType = 'media/components/cart'}"></div>
         <div class="login-header" data-sly-resource="${'comp' @resourceType = 'media/components/login'}"></div>
     </nav>
 </header>
