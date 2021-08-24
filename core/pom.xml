@@ -226,5 +226,21 @@ Import-Package: javax.annotation;version=0.0.0,*
             <artifactId>org.apache.felix.scr.annotations</artifactId>
             <version>1.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+        <!-- https://mvnrepository.com/artifact/org.json/json-simple -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+        </dependency>
+        <!-- Thanks for using https://jar-download.com -->
     </dependencies>
 </project>

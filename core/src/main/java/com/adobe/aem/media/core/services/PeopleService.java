@@ -25,7 +25,7 @@ public class PeopleService {
                 .getConnection("jdbc:mysql://localhost:3306/aemdb", "root", "Kantheti@9");
 
              // Step 2:Create a statement using connection object
-             PreparedStatement preparedStatement = connection.prepareStatement("insert into people VALUES (?,?,?,?,?,?,?)")) {
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into people VALUES (?,?,?,?,?,?,?)")) {
             preparedStatement.setInt(1, int_random);
             preparedStatement.setInt(2, people.getBirth_year());
             preparedStatement.setString(3, people.getFirst_name());

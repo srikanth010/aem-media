@@ -138,6 +138,12 @@
                     <artifactId>maven-bundle-plugin</artifactId>
                     <version>3.2.0</version>
                     <inherited>true</inherited>
+                    <configuration>
+                    <instructions>
+                        <Embed-Dependency>*;scope=compile;inline=false</Embed-Dependency>
+                        <Embed-Transitive>true</Embed-Transitive>
+                    </instructions>
+                </configuration>
                 </plugin>
                 <!-- Maven Clean Plugin -->
                 <plugin>
@@ -768,6 +774,16 @@ Bundle-DocURL:
                 <artifactId>org.osgi.compendium</artifactId>
                 <version>4.2.0</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20210307</version>
+            </dependency>
+            <dependency>
+                <groupId>com.googlecode.json-simple</groupId>
+                <artifactId>json-simple</artifactId>
+                <version>1.1.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

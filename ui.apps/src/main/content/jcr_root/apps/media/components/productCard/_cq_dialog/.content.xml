@@ -24,12 +24,6 @@
                                 fieldDescription="Product Path"
                                 fieldLabel="Product Path"
                                 name="./productPath"/>
-                            <parentPath
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
-                                fieldDescription="Parent Path"
-                                fieldLabel="Parent Path"
-                                name="./parentPath"/>
                         </items>
                     </banner>
                 </items>
