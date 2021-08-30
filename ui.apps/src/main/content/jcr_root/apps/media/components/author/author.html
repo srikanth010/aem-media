@@ -1,0 +1,61 @@
+<h1>Author Bio</h1>
+<div data-sly-use.author="com.adobe.aem.media.core.models.author.Author"></div>
+
+    <div>First Name :  ${author.firstName} </div>
+    <div>Lasr Name :  ${author.lastName}   </div>
+    <div>Is Professor:  ${author.isProfessor}  </div>
+    <div>Page Title :  ${author.pageTitle}  </div>
+    <div>Request Attribute :  ${author.requestAttribute}  </div>
+    <div>Home Page Name :  ${author.homePageName}  </div>
+    <div>Modified By :  ${author.lastModifiedBy}  </div>
+    <div>Books : ${author.books @ join=', '}</div>
+
+        ========================== USING MAP ================================
+    <div data-sly-list.item="${author.bookDetailsWithMap}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookname} </b></p>
+        <p> Subject : <b>${item.booksubject}</b> </p>
+        <p> Publish : <b>${item.publishyear}</b> </p>
+    </div>
+
+========================== USING List ================================
+
+<div class="list" data-sly-list.item="${author.books @begin= 0, end= 6}">
+    <p>Book: <b>${item}</b></p>
+</div>
+
+========================== USING Repeat ================================
+
+<div class="repeat" data-sly-repeat.item="${author.books @begin= 0, end= 6}">
+    <p>Book: <b>${item}</b></p>
+</div>
+
+
+========================== USING Template ================================
+
+<div data-sly-use.booksTemplate="template.html">
+    <sly data-sly-call="${booksTemplate.authorBooks @ books=author.bookDetailsWithMap}">
+    </sly>
+</div>
+
+========================== USING Attribute Demo ================================
+
+<div id = "html-attribute" class="media">
+    <p>Using HTML tag</p>
+</div>
+
+<div id = "sightly-attribute" data-sly-attribute.class="media">
+    <p>Using SIGHTLY tag</p>
+</div>
+
+<div id = "html-attribute" class="">
+    <p>Using HTML tag with no callss</p>
+</div>
+
+<div id = "sightly-attribute" data-sly-attribute.class="">
+    <p>Using SIGHTLY tag with no classs</p>
+</div>
+
+<div id = "sightly-attribute"  data-sly-attribute.attribute-2="new">
+    <p>Using SIGHTLY tag with no classs</p>
+</div>

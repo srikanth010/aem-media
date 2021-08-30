@@ -1,0 +1,7 @@
+<div data-sly-template.authorBooks="{@ books}">
+    <div data-sly-list.item="${books.bookDetailsWithMap}">
+        <p> Book : <b>${item.bookname} </b></p>
+        <p> Subject : <b>${item.booksubject}</b> </p>
+        <p> Publish : <b>${item.publishyear}</b> </p>
+    </div>
+</div>
