@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          cq:lastReplicated="{Date}2021-11-01T23:55:10.818Z"
+          cq:lastReplicatedBy="srikanthk"
+          cq:lastReplicationAction="Activate"
+          jcr:mixinTypes="[cq:ReplicationStatus]"
+          jcr:primaryType="sling:OsgiConfig"
+          prop.replication-action-type="DELETE"
+          prop.rules.hierarchical="[/content/ewb-digital/en/header-footer-base-page=/content/ewb-digital/en,/content/ewb-digital/es/header-footer-base-page=/content/ewb-digital/es,/content/ewb-digital/zh/header-footer-base-page=/content/ewb-digital/zh,/content/ewb-digital/zh_cn/header-footer-base-page=/content/ewb-digital/zh_cn,/content/velobank/en/header-footer-base-page=/content/velobank/en,/content/velobank/zh/header-footer-base-page=/content/velobank/zh,/content/velobank/zh_cn/header-footer-base-page=/content/velobank/zh_cn]"
+          prop.rules.resource-only="[]"/>
