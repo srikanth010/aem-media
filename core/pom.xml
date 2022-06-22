@@ -107,6 +107,11 @@ Import-Package: javax.annotation;version=0.0.0,*
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.service.component</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.adobe.cq/core.wcm.components.core -->
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.core</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.service.cm</artifactId>
