@@ -51,13 +51,6 @@
                     <group>com.adobe.aem.media</group>
                     <name>aem-media.ui.apps</name>
                     <packageType>application</packageType>
-                    <accessControlHandling>merge</accessControlHandling>
-                    <repositoryStructurePackages>
-                        <repositoryStructurePackage>
-                            <groupId>com.adobe.aem.media</groupId>
-                            <artifactId>aem-media.ui.apps.structure</artifactId>
-                        </repositoryStructurePackage>
-                    </repositoryStructurePackages>
                     <dependencies>
                         <dependency>
                             <groupId>com.adobe.cq</groupId>
@@ -114,20 +107,6 @@
             <groupId>com.adobe.aem.media</groupId>
             <artifactId>aem-media.core</artifactId>
             <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.adobe.aem.media</groupId>
-            <artifactId>aem-media.ui.frontend</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.adobe.aem.media</groupId>
-            <artifactId>aem-media.ui.apps.structure</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
         </dependency>
 
         <dependency>
