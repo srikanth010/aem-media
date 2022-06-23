@@ -48,12 +48,6 @@
                 <configuration>
                     <packageType>container</packageType>
                     <showImportPackageReport>false</showImportPackageReport>
-                    <repositoryStructurePackages>
-                        <repositoryStructurePackage>
-                            <groupId>com.adobe.aem.media</groupId>
-                            <artifactId>aem-media.ui.apps.structure</artifactId>
-                        </repositoryStructurePackage>
-                    </repositoryStructurePackages>
                 </configuration>
             </plugin>
             <plugin>
@@ -63,12 +57,5 @@
         </plugins>
     </build>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.adobe.aem.media</groupId>
-            <artifactId>aem-media.ui.apps.structure</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-    </dependencies>
+
 </project>
