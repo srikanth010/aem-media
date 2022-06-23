@@ -77,6 +77,21 @@ Import-Package: javax.annotation;version=0.0.0,*
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                <instructions>
+                <Sling-Model-Packages>com.adobe.aem.media.core.models</Sling-Model-Packages>
+                <Bundle-SymbolicName>aem-media.core</Bundle-SymbolicName>
+                    <Export-Package>
+                        com.adobe.*
+                    </Export-Package>
+                    <Embed-Dependency>*;scope=compile|runtime</Embed-Dependency>
+                </instructions>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
