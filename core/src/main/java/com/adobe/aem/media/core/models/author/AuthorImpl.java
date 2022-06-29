@@ -3,7 +3,6 @@ package com.adobe.aem.media.core.models.author;
 import com.day.cq.wcm.api.Page;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.apache.commons.lang3.LocaleUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -12,7 +11,6 @@ import org.apache.sling.models.annotations.injectorspecific.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.*;
@@ -73,15 +71,6 @@ public class AuthorImpl implements Author{
     @ValueMapValue
     private List<String> books;
 
-    @PostConstruct
-     public void init(){
-        String catalogLocale = "fr-ca";
-        String language = catalogLocale.substring(0,2);
-        String country = catalogLocale.substring(3,5).toUpperCase();
-        Locale locale = LocaleUtils.toLocale(language+"_"+country);
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("messages",locale);
-        fname = resourceBundle.getString("color");
-     }
 
     @Override
     public List<String> getBooks() {

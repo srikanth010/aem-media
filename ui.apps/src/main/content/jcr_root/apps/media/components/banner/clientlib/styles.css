@@ -8,7 +8,7 @@ body, html {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1918px;
+    width: -webkit-fill-available;
     padding-left: 0px;
     height: 700px;
     background-position: 22% 70% !important;
