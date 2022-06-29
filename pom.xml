@@ -45,6 +45,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <componentGroupName>Media</componentGroupName>
+        <!-- Sonar -->
+        <sonar.host.url>http://localhost:9001</sonar.host.url>
+        <sonar.projectName>AEM Media</sonar.projectName>
+        <sonar.login>347c98698b08b1719b6b738f8a03d7894fcb52d4</sonar.login>
+        <sonar.projectDescription>Builds an installable AEM bundle for use in all environments. </sonar.projectDescription>
+        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+        <sonar.coverage.jacoco.xmlReportPaths>${basedir}/core/target/site/jacoco/jacoco.xml </sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.java.source>1.8</sonar.java.source>
+        <sonar.java.target>1.8</sonar.java.target>
+        <java.version>1.8</java.version>
+        <sonar.scanner.force-deprecated-java-version>true</sonar.scanner.force-deprecated-java-version>
     </properties>
 
     <build>
@@ -308,6 +319,11 @@ Bundle-DocURL:
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
                     <version>3.0.0-M3</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.7.0.1746</version>
                 </plugin>
                 <!-- Maven Dependency Plugin -->
                 <plugin>
