@@ -20,10 +20,12 @@ h1 {
 
 a {
     text-decoration: none !important;
+    color: black !important;
+    font-weight: bold !important;
 }
 
 a:hover {
-    color: hotpink !important;;
+    color: #3fdb0d !important;;
 }
 
 header{

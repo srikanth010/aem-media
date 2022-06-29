@@ -11,7 +11,6 @@ body, html {
     width: -webkit-fill-available;
     padding-left: 0px;
     height: 700px;
-    background-position: 22% 70% !important;
     -webkit-justify-content: center;
     left: 300px;
 }
@@ -22,6 +21,8 @@ body, html {
     left: 80%;
     transform: translate(-50%, -50%);
     color: #dfdfdf;
+    background-color: #fefefe;
+    padding: 20px;
 }
 
 .hero-text button {
@@ -48,7 +49,7 @@ body, html {
 }
 
 .banner-description {
-    opacity: 0.5 !important;
+    opacity: 0.9 !important;
     color: #131313;
 }
 

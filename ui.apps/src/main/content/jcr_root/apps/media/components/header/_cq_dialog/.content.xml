@@ -28,7 +28,7 @@
                                         fieldDescription="White Logo Image"
                                         fieldLabel="White Logo"
                                         name="./whiteLogo"
-                                        rootPath="/content/dam/velobank"
+                                        rootPath="/content/dam/"
                                         text="White Logo"/>
                                     <logoLink
                                         jcr:primaryType="nt:unstructured"
@@ -36,7 +36,7 @@
                                         fieldDescription="Logo Link"
                                         fieldLabel="Logo link"
                                         name="./logoLink"
-                                        rootPath="/content/velobank"
+                                        rootPath="/content/"
                                         text="Logo Link"/>
                                     <logoLinkTitle
                                         jcr:primaryType="nt:unstructured"
@@ -95,7 +95,7 @@
                                                             fieldDescription="Navbar Link"
                                                             fieldLabel="Navbar Link"
                                                             name="./navLink"
-                                                            rootPath="/content/velobank"
+                                                            rootPath="/content/"
                                                             text="Navbar Link"/>
                                                         <navNewTab
                                                             jcr:primaryType="nt:unstructured"
@@ -138,7 +138,7 @@
                                                                         fieldDescription="Navbar Submenu Image"
                                                                         fieldLabel="Navbar Submenu Image"
                                                                         name="./navSubMenuImage"
-                                                                        rootPath="/content/dam/velobank"
+                                                                        rootPath="/content/dam/"
                                                                         text="Navbar Submenu Image"/>
                                                                     <navSubMenuImageAlt
                                                                         jcr:primaryType="nt:unstructured"
@@ -167,7 +167,7 @@
                                                                         fieldDescription="Navbar Submenu Link"
                                                                         fieldLabel="Navbar Submenu Link"
                                                                         name="./navSubMenuLink"
-                                                                        rootPath="/content/velobank"
+                                                                        rootPath="/content/"
                                                                         text="Navbar Submenu Link"/>
                                                                     <navSubMenuNewTab
                                                                         jcr:primaryType="nt:unstructured"
