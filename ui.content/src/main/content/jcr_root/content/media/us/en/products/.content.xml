@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:lastModified="{Date}2021-07-25T14:19:12.917-07:00"
         cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-06-29T14:00:49.119-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:template="/conf/media/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Products"
+        jcr:uuid="88fa7faa-2b27-44ba-8650-6e3ecbe5d299"
         sling:resourceType="media/components/page">
         <root
             jcr:primaryType="nt:unstructured"

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastReplicated="{Date}2022-06-29T14:01:05.475-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
         cq:policy="media/components/page/policy"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
         jcr:primaryType="nt:unstructured"
+        jcr:uuid="48c0aebb-a20d-4050-a6fb-3da1702d5e30"
         sling:resourceType="wcm/core/components/policies/mappings">
         <root
             cq:policy="media/components/container/policy_1575040440977"
