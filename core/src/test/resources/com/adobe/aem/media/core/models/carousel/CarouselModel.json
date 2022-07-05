@@ -1,0 +1,34 @@
+{
+"carousel":{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Tue Jul 05 2022 13:17:50 GMT-0400",
+  "jcr:lastModified": "Tue Jul 05 2022 13:20:27 GMT-0400",
+  "sling:resourceType": "media/components/carousel",
+  "textIsRich": [
+    "true",
+    "true"
+  ],
+  "carouselLinkItems": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "carouselDescription": "Dwa",
+      "image": "/content/dam/we-retail/en/people/womens/women_2.jpg",
+      "ctaTextLabel": "Label",
+      "ctaLink": "#",
+      "caroselHeading": "<p>This is Carousel Image</p>\r\n"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "carouselDescription": "The description for image.",
+      "image": "/content/dam/we-retail/en/people/womens/women_6.jpg",
+      "ctaTextLabel": "Click Here",
+      "ctaLink": "#",
+      "caroselHeading": "<p>This is another image&nbsp;This is another image&nbsp;This is another image&nbsp;This is another image.</p>\r\n"
+    }
+  }
+}
+
+}

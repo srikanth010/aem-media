@@ -1,0 +1,10 @@
+{
+  "banner": {
+    "bannerImage": "/content/dam/we-retail/en/activities/skiing/ski%20touring.jpg",
+    "bannerHeading": "<p>This is Banner Image</p>\r\n",
+    "bannerDescription": "Banner Description",
+    "bannerCtaLabel": "Label",
+    "bannerCtaLink": "#",
+    "linkColor": "black"
+  }
+}
