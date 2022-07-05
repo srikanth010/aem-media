@@ -34,3 +34,12 @@ header{
     align-items: center;
     padding: 10px 10%;
 }
+
+#footer_main  {
+    margin-top: 80px;
+    position: relative;
+}
+
+#footer_main p {
+    color: black;
+}
