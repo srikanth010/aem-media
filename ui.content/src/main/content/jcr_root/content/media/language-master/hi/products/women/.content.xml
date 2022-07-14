@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-14T12:54:55.097-04:00"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationDone="{Date}2022-07-14T12:54:55.097-04:00"
+        cq:lastTranslationUpdate="{Date}2022-07-13T17:27:29.142-04:00"
+        cq:template="/conf/media/settings/wcm/templates/page-content"
+        cq:translationMethod="MACHINE_TRANSLATION"
+        cq:translationProviderCloudConfig="/libs/settings/cloudconfigs/translation/msft-translation/msft_trial"
+        cq:translationProviderName="microsoft"
+        cq:translationSourcePath="/content/media/language-master/en/products/women"
+        cq:translationStatus="APPROVED"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="महिलाओं"
+        jcr:uuid="bdbb0565-c3dd-4a64-bc68-fed7156f4748"
+        sling:resourceType="/apps/core/wcm/components/page/v2/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="media/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="media/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/container"
+                    layout="responsiveGrid"/>
+                <header
+                    jcr:created="{Date}2022-06-26T23:50:28.368-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-26T23:50:56.071-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/header"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

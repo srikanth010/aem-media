@@ -4,7 +4,7 @@
     <jcr:content
         cq:allowedTemplates="[/conf/media/settings/wcm/templates/(?!xf-).*]"
         cq:conf="/conf/media"
-        cq:lastReplicated="{Date}2022-06-29T14:00:49.119-04:00"
+        cq:lastReplicated="{Date}2022-07-01T11:34:57.684-04:00"
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Activate"
         jcr:isCheckedOut="{Boolean}true"
@@ -21,5 +21,9 @@
             <file/>
         </image>
     </jcr:content>
+    <language-master/>
+    <fr/>
+    <ge/>
+    <in/>
     <us/>
 </jcr:root>

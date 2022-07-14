@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-13T17:39:14.382-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/media/settings/wcm/templates/page-content"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Jacket"
+        jcr:uuid="0a30a71d-af5f-403f-853f-b7af22fdb978"
+        sling:resourceType="/apps/core/wcm/components/page/v2/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="media/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="media/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/container"
+                    layout="responsiveGrid">
+                    <spacer
+                        jcr:created="{Date}2022-06-27T00:01:08.047-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-27T00:01:08.047-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/spacer"/>
+                    <product
+                        jcr:created="{Date}2022-06-27T00:01:36.079-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-27T00:03:00.939-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/product"
+                        bannerCtaLink="#"
+                        enableColor="true"
+                        enableSize="true"
+                        productCtaLabel="Add to Cart"
+                        productDescription="&lt;p>This is a Product Description.&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                        productHelp="help.html"
+                        productPrice="35"
+                        productTitle="Coat"
+                        productType="coat"
+                        textIsRich="true">
+                        <productDetail jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                productColor="green"
+                                productImage="/content/dam/we-retail/en/products/apparel/coats/El Gordo Green.jpg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                productColor="white"
+                                productImage="/content/dam/we-retail/en/products/apparel/coats/Brooklyn.jpg"/>
+                        </productDetail>
+                    </product>
+                </container>
+                <header
+                    jcr:created="{Date}2022-06-26T23:50:28.368-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-06-26T23:50:56.071-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/header"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

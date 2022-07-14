@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-14T12:54:55.220-04:00"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationDone="{Date}2022-07-14T12:54:55.220-04:00"
+        cq:lastTranslationUpdate="{Date}2022-07-13T17:27:29.164-04:00"
+        cq:template="/conf/media/settings/wcm/templates/page-content"
+        cq:translationMethod="MACHINE_TRANSLATION"
+        cq:translationProviderCloudConfig="/libs/settings/cloudconfigs/translation/msft-translation/msft_trial"
+        cq:translationProviderName="microsoft"
+        cq:translationSourcePath="/content/media/language-master/en/register"
+        cq:translationStatus="APPROVED"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="पंजीकृत करें"
+        jcr:uuid="9eb2f8ab-a0dd-4f8e-87a2-79339bcb3963"
+        sling:resourceType="media/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="media/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="media/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/container"
+                    layout="responsiveGrid">
+                    <banner
+                        jcr:created="{Date}2021-07-24T14:27:36.446-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-07-24T14:28:00.039-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/banner"
+                        bannerImage="/content/dam/media/Screen%20Shot%202021-07-21%20at%2010.56.34%20AM.png"
+                        textIsRich="true"/>
+                    <dataform
+                        jcr:created="{Date}2021-07-24T14:29:58.969-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-07-24T14:29:58.969-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/dataform"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

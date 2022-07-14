@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-14T12:55:05.812-04:00"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationDone="{Date}2022-07-14T12:55:05.812-04:00"
+        cq:lastTranslationUpdate="{Date}2022-07-13T17:27:27.709-04:00"
+        cq:template="/conf/media/settings/wcm/templates/page-content"
+        cq:translationMethod="MACHINE_TRANSLATION"
+        cq:translationProviderCloudConfig="/libs/settings/cloudconfigs/translation/msft-translation/msft_trial"
+        cq:translationProviderName="microsoft"
+        cq:translationSourcePath="/content/media/language-master/en/products/men/coat-1"
+        cq:translationStatus="APPROVED"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="abrigo-1"
+        jcr:uuid="88a46e32-3954-4cb6-95e3-aff60518e56d"
+        sling:resourceType="media/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="media/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="media/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/container"
+                    layout="responsiveGrid">
+                    <spacer
+                        jcr:created="{Date}2022-06-29T14:26:09.977-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-29T14:26:09.977-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/spacer"/>
+                    <product
+                        jcr:created="{Date}2021-07-25T14:44:37.300-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-26T23:50:09.405-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/product"
+                        bannerCtaLink="#"
+                        enableColor="true"
+                        enableSize="true"
+                        productCtaLabel="Add to Cart"
+                        productDescription="&lt;p>This is a Product for Coating&lt;/p>&#xd;&#xa;"
+                        productHelp="help.html"
+                        productPrice="38"
+                        productTitle="Coat"
+                        productType="coat"
+                        textIsRich="true">
+                        <productDetail jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                productColor="White"
+                                productImage="/content/dam/we-retail/en/products/apparel/coats/Brooklyn.jpg"/>
+                        </productDetail>
+                    </product>
+                    <product_1485810604
+                        jcr:created="{Date}2022-06-26T23:47:49.878-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-06-26T23:47:49.878-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/product"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

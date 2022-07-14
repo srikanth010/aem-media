@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-14T12:54:55.341-04:00"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationDone="{Date}2022-07-14T12:54:55.341-04:00"
+        cq:lastTranslationUpdate="{Date}2022-07-13T17:27:29.186-04:00"
+        cq:template="/conf/media/settings/wcm/templates/page-content"
+        cq:translationMethod="MACHINE_TRANSLATION"
+        cq:translationProviderCloudConfig="/libs/settings/cloudconfigs/translation/msft-translation/msft_trial"
+        cq:translationProviderName="microsoft"
+        cq:translationSourcePath="/content/media/language-master/en/home"
+        cq:translationStatus="APPROVED"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="घर"
+        jcr:uuid="edcc24e8-cfbe-4430-90be-420f7dbf7fb9"
+        sling:resourceType="/apps/core/wcm/components/page/v2/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="media/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="media/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:lastModified="{Date}2022-06-23T02:52:33.120-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/container"
+                    layout="responsiveGrid">
+                    <banner_copy
+                        jcr:created="{Date}2022-06-23T02:06:38.095-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-05T14:07:16.888-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/banner"
+                        bannerCtaLabel="Label"
+                        bannerCtaLink="#"
+                        bannerDescription="Banner Description"
+                        bannerHeading="&lt;p>The Description for the main Banner Image ...&lt;/p>&#xd;&#xa;"
+                        bannerImage="/content/dam/we-retail/en/activities/skiing/ski%20touring.jpg"
+                        linkColor="black"
+                        textIsRich="true"/>
+                    <carousel
+                        jcr:created="{Date}2022-07-05T13:17:50.513-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-05T13:20:27.265-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/carousel"
+                        textIsRich="[true,true]">
+                        <carouselLinkItems jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                caroselHeading="&lt;p>This is Carousel Image&lt;/p>&#xd;&#xa;"
+                                carouselDescription="Dwa"
+                                ctaLink="#"
+                                ctaTextLabel="Label"
+                                image="/content/dam/we-retail/en/people/womens/women_2.jpg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                caroselHeading="&lt;p>This is another image&amp;nbsp;This is another image&amp;nbsp;This is another image&amp;nbsp;This is another image.&lt;/p>&#xd;&#xa;"
+                                carouselDescription="The description for image."
+                                ctaLink="#"
+                                ctaTextLabel="Click Here"
+                                image="/content/dam/we-retail/en/people/womens/women_6.jpg"/>
+                        </carouselLinkItems>
+                    </carousel>
+                    <author
+                        jcr:created="{Date}2022-06-28T14:13:43.223-04:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-07-01T16:56:10.677-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/author"
+                        books="[Honey Bee,Game Of Thrones,Call of Duty]"
+                        fname="SRIKANTH"
+                        lname="kanteti"
+                        professor="false">
+                        <bookdetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                bookname="Honey Bee"
+                                booksubject="Game Details"
+                                publishyear="Battlefield"/>
+                        </bookdetailswithmap>
+                    </author>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

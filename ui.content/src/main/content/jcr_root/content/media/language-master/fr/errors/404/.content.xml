@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-07-14T12:55:10.088-04:00"
+        cq:lastModifiedBy="translation-job-service"
+        cq:lastTranslationDone="{Date}2022-07-14T12:55:10.088-04:00"
+        cq:lastTranslationUpdate="{Date}2022-07-13T17:27:28.246-04:00"
+        cq:template="/conf/media/settings/wcm/templates/page-content"
+        cq:translationMethod="MACHINE_TRANSLATION"
+        cq:translationProviderCloudConfig="/libs/settings/cloudconfigs/translation/msft-translation/msft_trial"
+        cq:translationProviderName="microsoft"
+        cq:translationSourcePath="/content/media/language-master/en/errors/404"
+        cq:translationStatus="APPROVED"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="404"
+        jcr:uuid="f3752600-be16-40ef-bd32-19136f0cdbee"
+        sling:resourceType="media/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="media/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="media/components/container"
+                layout="responsiveGrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="media/components/container"
+                    layout="responsiveGrid">
+                    <banner
+                        jcr:created="{Date}2021-07-25T10:22:35.972-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-07-25T13:26:13.417-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="media/components/banner"
+                        bannerHeading="&lt;p>Page Not Found Please Redirect to &lt;a href=&quot;/content/media/us/en/home.html&quot;>Home&lt;/a>&lt;br />&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                        bannerImage="/content/dam/wknd/en/magazine/la-skateparks/robson-hatsukami-morgan-280159.jpg"
+                        linkColor="white"
+                        textIsRich="true"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
